@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Город Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+
+    <!-- Шапка сайта -->
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -19,7 +22,7 @@
           </li>
         </ul>
         <a class="navigation-logo" href="#">
-          <img class="header-sedona-logo"  alt="Логотип города Седона" src="">
+          <img class="header-sedona-logo" width="138" height="70" alt="Логотип города Седона" src="image/sedona.svg">
         </a>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
@@ -37,14 +40,16 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
+
+    <!-- Содержание сайта -->
     <main class="main-index">
       <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-      <img class="icon" src="" alt="«Потому что Гранд Каньон отстой!»">
+      <img class="icon" src="image/welcome.png" width="458" height="352" alt="«Потому что Гранд Каньон отстой!»">
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <h3 class="advantages-item">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
@@ -56,27 +61,27 @@
           <li class="advantages-description-item">
             <h3 class="advantages-description-title">Настоящий городок</h3>
             <p class="advantages-description-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="street-city" src="" alt="Улицы города Седона">
+            <img class="street-city" src="image/photo-1.jpg"  width="800" height="384" alt="Улицы города Седона">
             <ul>
               <li class="advantages-description-item">
-                <img class="house-icon"  alt="иконка дом" src="">
+                <img class="house-icon"  width="74" height="70" alt="Иконка дом" src="image/house.svg">
                 <h3 class="advantages-description-title">Жильё</h3>
                 <p class="advantages-description-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="advantages-description-item">
-                <img class="food-icon"  alt="Иконка еда" src="">
+                <img class="food-icon" width="74" height="70"  alt="Иконка еда" src="image/food.svg">
                 <h3 class="advantages-description-title">Еда</h3>
                 <p class="advantages-description-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="advantages-description-item">
-                <img class="souvenirs-icon"  alt="Иконка сувениры" src="">
+                <img class="souvenirs-icon" width="74" height="70" alt="Иконка сувениры" src="image/surprise.svg">
                 <h3 class="advantages-description-title">Сувениры</h3>
                 <p class="advantages-description-description">Не только китайского, но и настоящего местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="advantages-description-item">
-            <img class="canyon" src="" alt="Каньон">
+            <img class="canyon" width="800" height="384" src="image/photo-2.jpg" alt="Каньон">
             <h3 class="advantages-description-title">Там есть мост дьявола</h3>
             <p class="advantages-description-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -94,14 +99,19 @@
           </li>
         </ol>
       </section>
+
+      <!-- Поиск гостиниц-ссылка-кнопка -->
       <section class="search-hotel">
         <h2 class="page-main-search-hotel">Заинтересовались?</h2>
         <p class="info-search-hotel">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a class="button search-hotel-button" href="catalog.html">
-             Поиск гостиницы в Седоне
+            Поиск гостиницы в Седоне
           </a>
       </section>
+
+      <!-- Подписка -->
       <section class="newsletter">
+        <img class="newsletter-background" width="1200" height="408" src="image/background.jpg" alt="Фон подписки главной страницы">
         <h2 class="page-main-newsletter">Подпишитесь на рассылку</h2>
         <p class="info-newsletter">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -115,6 +125,8 @@
         </form>
       </section>
     </main>
+
+    <!-- Подвал сайта -->
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
@@ -137,18 +149,19 @@
         </ul>
       </section>
       <section class="phone">
-        <h2 class="page-footer-phone">Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <address class="footer-contact">
           <a class="footer-contact-phone" href="tel:+78128121212">+7 812 812-12-12</a>
         </address>
       </section>
       <section class="footer-author">
-        <h2 class="page-footer-author">Автор</h2>
+        <h2 class="visually-hidden">Автор</h2>
         <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="footer-author-logo"  alt="Логотип htmlакадемии»" src="">
+          <img class="footer-author-logo"  width="115" height="34" alt="Логотип htmlакадемии»" src="image/logo_htmlacademy.svg">
         </a>
       </section>
     </footer>
   </body>
 </html>
 
+<!-- page-footer-author -->
