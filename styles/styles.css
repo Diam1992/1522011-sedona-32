@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
 
-  src: url("fonts/ptsans-400.woff2") format(woff2);
+  src: url("../fonts/ptsans-400.woff2") format(woff2);
   font-display: swap;
 }
 
@@ -12,15 +12,14 @@
   font-style: normal;
   font-weight: 700;
 
-  src: url("fonts/ptsans-700.woff2") format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  line-height: 21px;
-  text-align: center;
+  line-height: 1.167em;
   color: #242424;
   background-color: white;
 }
@@ -61,23 +60,27 @@ body {
   width: auto;
   height: 485px;
   color: #000000;
+  text-align: center;
   background-color: #FFFFFF;
   background-image: url("../image/index-background.png");
-  background-size: 100% auto;
+  background-size: cover;
+	background-position: center;
   background-repeat: no-repeat;
 }
 
-/* Приимущества */
+/* Приимущества   background-image: url("../image/photo-1.jpg");  background-image: url("../image/photo-2.jpg");*/
 
 .advantages-item {
   font-size: 30px;
   line-height: 36px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .advantages-title {
   font-size: 22px;
   line-height: 36px;
+  text-align: center;
 }
 
 .advantages-description-title{
@@ -91,16 +94,11 @@ body {
   color: white;
   background-color: #83B3D3;
   text-align: left;
-  background-position: right;
-  background-image: url("../image/photo-1.jpg");
-  background-repeat: no-repeat;
 }
 
 .advantages-description-item-1-1 {
   width: auto;
   height: 384px;
-  background-image: url("../image/photo-2.jpg");
-  background-repeat: no-repeat;
   color: white;
   background-color: #83B3D3;
   text-align: right;
@@ -136,7 +134,8 @@ body {
   color: white;
   text-align: left;
   background-image: url("../image/catalog/catalog-background-1.png");
-  background-size: 100% auto;
+  background-size: cover;
+	background-position: right;
   background-repeat: no-repeat;
 }
 
@@ -225,6 +224,27 @@ font-family: "PT Sans", sans-serif;
   text-decoration: none;
 }
 
+.pagination-item {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  color: white;
+  float: left;
+  background-color: #83B3D3;
+}
+
+.pagination-current {
+  width: 55px;
+  height: 55px;
+  color: black;
+  background-color: #E5E5E5;
+}
+
+.sorting-list {
+  font-size: 18px;
+  line-height: 23px;
+}
+
 
 /* Поиск гостиниц */
 
@@ -233,6 +253,7 @@ font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   width: auto;
+  text-align: center;
   height: 411px;
   color: black;
   background-color:white
@@ -244,6 +265,13 @@ font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
 }
 
+.search-hotel-button {
+  width: 575px;
+  height: 60px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 
 /* Подписка */
 
@@ -253,6 +281,7 @@ font-family: "PT Sans", sans-serif;
   line-height: 26px;
   width: auto;
   height: 411px;
+  text-align: center;
   color: white;
   background-image: url("../image/background.jpg");
   background-size: 100% auto;
@@ -263,6 +292,7 @@ font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   width: auto;
+  text-align: center;
   height: 411px;
   color: black;
   background-color: white;
@@ -300,6 +330,15 @@ font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+}
+
+.button-soc {
+  font-family: inherit;
+  font-weight: 700;
+  color: white;
+  background-color: #83B3D3;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 
