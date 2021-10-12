@@ -223,15 +223,21 @@ body {
 
 /*  Фильтры каталога  */
 
+
 .catalog-background-1 {
-  width: auto;
+  display: flex;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
   height: auto;
   color: white;
   text-align: left;
   background-image: url("../image/catalog/catalog-background-1.png");
   background-size: cover;
-	background-position: right;
+	background-position: center;
   background-repeat: no-repeat;
+  justify-content: space-between;
 }
 
 .order-link{
@@ -272,7 +278,17 @@ font-family: "PT Sans", sans-serif;
 
 /* Сортировка гостиниц  */
 
+.shorting-list {
+  display: flex;
+  width: 1200px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
 .shorting  h2 {
+  margin: 0;
   font-family: "PT Sans", sans-serif;
   font-style: Bold;
   font-size: 30px;
@@ -283,10 +299,12 @@ font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
 }
 
+
+
 .catalog-filter-group-card {
   color: black;
   background-color:white;
-  text-align: right;
+
 }
 
 .favourites-card-button {
@@ -300,6 +318,10 @@ font-family: "PT Sans", sans-serif;
 }
 
 .house-list {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  width: 1200px;
   text-align: left;
 }
 .rating-card-button {
@@ -309,8 +331,15 @@ font-family: "PT Sans", sans-serif;
 }
 
 .pagination-show-more {
+  display: flex;
+  width: 625px;
+  height: 55px;
+  align-items: center;
+  margin: 0 auto;
   color: white;
   background-color: #83B3D3;
+  justify-content: center;
+  border-radius: 4px;
 }
 
 .house-card-link{
@@ -320,6 +349,9 @@ font-family: "PT Sans", sans-serif;
 }
 
 .pagination-item {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
   display: inline-block;
   width: 55px;
   height: 55px;
@@ -328,6 +360,7 @@ font-family: "PT Sans", sans-serif;
 }
 
 .pagination-current {
+  margin: 0;
   width: 55px;
   height: 55px;
   color: black;
@@ -337,6 +370,15 @@ font-family: "PT Sans", sans-serif;
 .sorting-list {
   font-size: 18px;
   line-height: 23px;
+}
+.page-pagination-container {
+  margin-right: 72px;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  border-radius: 4px;
+
 }
 
 

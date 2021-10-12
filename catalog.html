@@ -6,40 +6,43 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 <body>
-
     <!-- Шапка сайта -->
     <header class="page-header">
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="index.html" >Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="about-sedona.html">О Седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <a class="navigation-logo" href="index.html">
-          <img class="header-sedona-logo" width="138" height="70" alt="Логотип города Седона" src="image/sedona.svg">
-        </a>
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">
-            <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="navigation-item">
-            <a class="button" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header-container">
+        <nav class="navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link navigation-link-current" href="main.html" >Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="about-sedona.html">О Седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            </li>
+          </ul>
+          <a class="navigation-logo" href="#">
+            <img class="header-sedona-logo" width="138" height="70" alt="Логотип города Седона" src="image/sedona.svg">
+          </a>
+          <ul class="navigation-user">
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">
+                  Поиск
+                </span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a class="button" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Содержание сайта каталога -->
@@ -47,9 +50,6 @@
 
     <!-- Фильтры каталога -->
 
-    <!-- Может понадобиться  <img class="order-link-house" width="10" height="10" src="image/home 1.svg" alt="Главная">
-        <img class="order-link-next" width="10" height="10" src="image/nav-link 1.svg" alt="Далее">
-    -->
     <div class="catalog-background-1">
 
       <header class="inner-header">
@@ -61,11 +61,13 @@
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
-          <li class="order-item">
-            <a class="order-link" href="catalog.html">
-              <span class="visually-hidden">Вперед</span>
-            </a>
-          </li>
+          <ul>
+            <li class="order-item">
+              <a class="order-link" href="catalog.html">
+                <span class="visually-hidden">Вперед</span>
+              </a>
+            </li>
+          </ul>
           <li class="order-item">
             <a class="order-link">Каталог</a>
           </li>
@@ -152,33 +154,39 @@
     <!-- Сортировка гостиниц -->
     <div class="shorting">
       <section class="shorting-list">
-        <h2>Найдено гостниц: 38</h2>
-        <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="popular">Сначала популярное</option>
-            <option value="cheap" selected>Сначала дешёвое</option>
-            <option value="expensive">Сначала дорогое</option>
-          </select>
-        </form>
-        <form class="catalog-filter-group-card">
-        <label class="control-list">
-          <input class="visually-hidden button-card" type="radio" name="button-radio" value="card">
-          <span class="visually-hidden">Показать карточки</span>
-        </label>
-        <label class="control-list">
-          <input class="visually-hidden buton-monitor" type="radio" name="button-radio" value="monitor">
-          <span class="visually-hidden">Полный экран</span>
-        </label>
-        <label class="control-list">
-          <input class="visually-hidden button-light" type="radio" name="button-radio" value="light" checked>
-          <span class="visually-hidden">Показать список</span>
-        </label>
-        </form>
+        <div class="shorting-list-0">
+          <h2>Найдено гостниц: 38</h2>
+        </div>
+        <div class="shorting-list-1">
+          <form class="sorting-type">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="select-control" id="sorting" name="sorting">
+              <option value="popular">Сначала популярное</option>
+              <option value="cheap" selected>Сначала дешёвое</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+          </form>
+        </div>
+        <div class="shorting-list-2">
+          <form class="catalog-filter-group-card">
+          <label class="control-list">
+            <input class="visually-hidden button-card" type="radio" name="button-radio" value="card">
+            <span class="visually-hidden">Показать карточки</span>
+          </label>
+          <label class="control-list">
+            <input class="visually-hidden buton-monitor" type="radio" name="button-radio" value="monitor">
+            <span class="visually-hidden">Полный экран</span>
+          </label>
+          <label class="control-list">
+            <input class="visually-hidden button-light" type="radio" name="button-radio" value="light" checked>
+            <span class="visually-hidden">Показать список</span>
+          </label>
+          </form>
+        </div>
       </section>
     </div>
 
-    <!-- Список гостиниц -->
+      <!-- Список гостиниц -->
       <ul class="house-list">
         <li class="house-card">
           <a class="house-card-link" href="house.html">
@@ -201,8 +209,8 @@
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button button">Избранное</a>
             <a href="#" class="rating-card-button button">Рейтинг: 8,9</a>
-          </li>
-          <li class="house-card">
+        </li>
+        <li class="house-card">
             <a class="house-card-link" href="house.html">
               <img class="house-card-image" src="image/catalog/hotel-3.jpg" width="180" height="120" alt="Апартаменты Villas at Poco Diablo">
               <h3 class="house-card-title">Villas at Poco Diablo</h3>
@@ -212,8 +220,8 @@
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button-green button">Избранное</a>
             <a href="#" class="rating-card-button button">Рейтинг: 9,2</a>
-          </li>
-          <li class="house-card">
+        </li>
+        <li class="house-card">
             <a class="house-card-link" href="house.html">
               <img class="house-card-image" src="image/catalog/hotel-4.jpg" width="180" height="120" alt="Гостиница GreenTree Inn">
               <h3 class="house-card-title">GreenTree Inn</h3>
@@ -223,13 +231,14 @@
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button button">Избранное</a>
             <a href="#" class="rating-card-button button">Рейтинг: 9,2</a>
-          </li>
-        </ul>
+        </li>
+      </ul>
 
 
         <!-- Пангинация страниц гостиниц -->
         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
 
+      <div class="page-pagination-container">
         <ul class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
@@ -263,7 +272,9 @@
           </select>
           <button class="visually-hidden" type="submit">Отсортировать продукты</button>
         </form>
+      </div>
       </section>
+
 
       <!-- Подписка на рассылку сайта -->
       <section class="newsletter-catalog">
@@ -280,42 +291,45 @@
           </button>
         </form>
       </section>
+    </div>
     </main>
 
     <!-- Подвал сайта -->
     <footer class="page-footer">
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button button-soc" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button button-soc" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebook</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button button-soc" href="https://www.youtube.com/c/HTMLAcademyRUS">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="phone">
-        <h2 class="visually-hidden">Контакты</h2>
-        <address class="footer-contact">
-          <a class="footer-contact-phone" href="tel:+78128121212">+7 812 812-12-12</a>
-        </address>
-      </section>
-      <section class="footer-author">
-        <h2 class="visually-hidden">Автор</h2>
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
-          <img class="footer-author-logo"  width="115" height="34" alt="Логотип htmlакадемии»" src="image/logo_htmlacademy.svg">
-        </a>
-      </section>
+      <div class="page-footer-container">
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button button-soc" href="https://twitter.com/htmlacademy_ru">
+                <span class="visually-hidden">Twitter</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button button-soc" href="https://www.facebook.com/htmlacademy">
+                <span class="visually-hidden">Facebook</span>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button button-soc" href="https://www.youtube.com/c/HTMLAcademyRUS">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="phone">
+          <h2 class="visually-hidden">Контакты</h2>
+          <address class="footer-contact">
+            <a class="footer-contact-phone" href="tel:+78128121212">+7 812 812-12-12</a>
+          </address>
+        </section>
+        <section class="footer-author">
+          <h2 class="visually-hidden">Автор</h2>
+          <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+            <img class="footer-author-logo"  width="115" height="34" alt="Логотип htmlакадемии»" src="image/logo_htmlacademy.svg">
+          </a>
+        </section>
+      </div>
     </footer>
 </body>
 </html>
