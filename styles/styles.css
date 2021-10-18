@@ -29,7 +29,7 @@ body {
   font-size: 18px;
   line-height: 1.167em;
   color: #242424;
-  background-color: white;
+  background-color: #F2F2F2;
 }
 
 .button {
@@ -51,6 +51,16 @@ body {
   flex-grow: 1;
 }
 
+.page-body-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #242424;
+  background-color: white;
+}
+
 
 .page-header {
   display: flex;
@@ -59,8 +69,6 @@ body {
   color: #000000;
   background: #FFFFFF;
 }
-
-
 
 .navigation {
   width: 1200px;
@@ -110,10 +118,6 @@ body {
 }
 
 
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
 
 /* Приимущества  */
 
@@ -449,17 +453,14 @@ font-family: "PT Sans", sans-serif;
 
 /* Подвал */
 
-.page-footer-container {
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  justify-content: space-between;
-}
+
 
 .page-footer {
+  display: flex;
   font-weight: 120px;
   color: black;
   background-color: #FFFFFF;
+  justify-content: space-between;
 }
 
 .page-footer a {
