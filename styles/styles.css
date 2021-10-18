@@ -456,11 +456,14 @@ font-family: "PT Sans", sans-serif;
 
 
 .page-footer {
+  width: 1200px;
   display: flex;
   font-weight: 120px;
+  margin-left: auto;
+  margin-right: auto;
   color: black;
   background-color: #FFFFFF;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .page-footer a {
