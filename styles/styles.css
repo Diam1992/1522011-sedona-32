@@ -1,20 +1,31 @@
-@font-face{
+@font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-
-  src: url("../fonts/ptsans-400.woff2") format(woff2);
   font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format(woff2);
 }
 
-@font-face{
+@font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-
-  src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
 }
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 
 html {
   height: 100%;
@@ -42,6 +53,17 @@ body {
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -78,21 +100,36 @@ body {
 }
 
 .navigation-list {
-  width: 260px;
-  margin-right: 160px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 120px;
+  padding: 0px;
+  list-style-type: none;
+
 }
 
 .navigation-user {
-  margin-left: 210px;
-  max-width: 200px;
+  display: flex;
+  list-style-type: none;
+  margin-left: 270px;
 }
 
 .navigation-logo {
   display: block;
-  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: -10px;
+  position: absolute;
+  margin-left: 531px;
+  margin-right: auto
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 22px;
 }
 
 .navigation-link {
+  padding: 20px 16px;
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
@@ -107,7 +144,9 @@ body {
   display: block;
   margin: 0 auto;
   width: 1200px;
-  height: 485px;
+  min-height: 400px;
+  padding-top: 52px;
+  padding-bottom: 83px;
   color: #000000;
   text-align: center;
   background-color: #FFFFFF;
@@ -117,15 +156,13 @@ body {
   background-repeat: no-repeat;
 }
 
-
-
 /* Приимущества  */
 
 .advantages {
+  text-align: center;
   max-width: 800px;
-  height: 282px;
-
-  margin: 0 auto;
+  min-height: 150px;
+  margin: 63px auto 79px auto;
   padding: 0;
 }
 
@@ -139,12 +176,14 @@ body {
 .advantages-title {
   font-size: 22px;
   line-height: 36px;
-  text-align: center;
 }
 
 .advantages-description-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .advantages-description-title {
@@ -154,86 +193,87 @@ body {
 }
 
 .advantages-description-item {
-  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  list-style-type: none;
 }
 
 .advantages-description-item-1 {
   display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  height: 384px;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  min-height: 384px;
   color: white;
   background-color: #83B3D3;
   text-align: center;
 }
 
 .page-advantages-description {
-  margin-right: 0;
-  padding: 0;
-  width: 1200px;
-  height: 384px;
   display: flex;
-  justify-content: space-between;
+  width: 400px;
+  padding: 0px;
   text-align: center;
-  list-style-type: none;
 }
 
 .advantages-description-item-1-1 {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  width: 1200px;
-  height: 384px;
+  width: 400px;
+  min-height: 384px;
   color: white;
   background-color: #83B3D3;
-  text-align: right;
+  text-align: center;
 }
 
 .advantages-description-item-2 {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-description-item-3 {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   color: #000000;
   background-color: #FFFFFF;
 }
 
 .advantages-description-item-4 {
   width: 400px;
-  height: 384px;
+  min-height: 384px;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.list-advantages {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+
+.icon-image {
+  margin: auto;
 }
 
+.advantages-description-description {
+  margin:  0 auto;
+  min-height: 73px;
+  width: 250px;
 
-
-
-
+}
 /*  Фильтры каталога  */
 
 
 .catalog-background-1 {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  height: auto;
+  min-height: auto;
   color: white;
   text-align: left;
   background-image: url("../image/catalog/catalog-background-1.png");
@@ -243,8 +283,17 @@ body {
   justify-content: space-between;
 }
 
+.order {
+  display: flex;
+  margin: 71px;
+  margin-top: 0px;
+  padding: 0;
+  list-style: none;
+}
+
 .order-link{
-font-family: "PT Sans", sans-serif;
+  margin-right: 32px;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -258,12 +307,27 @@ font-family: "PT Sans", sans-serif;
   line-height: 23px;
 }
 
+.inner-header-title {
+  display: flex;
+  flex-grow: 1;
+  font-size: 60px;
+  line-height: 100%;
+  margin-top: 35px;
+  margin-left: 71px;
+  margin-right: 580px;
+  margin-bottom: 5px;
+}
+
 .button-apply {
-  font-size: 20px;
-  line-height: 26px;
+  width: 160px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 21px;
+  margin: 0 auto;
   color: white;
   background-color: #83B3D3;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .button-reset {
@@ -272,14 +336,32 @@ font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
   font-weight: 400;
-  color: black;
-  background-color:white;
+  color: white;;
   text-decoration: none;
   text-transform: none;
+  background: transparent;
+}
+
+.but-pr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+}
+
+.catalog-products {
+  display: flex;
+  flex-direction: column;
+  max-width: 150px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style-type: none;
+
 }
 
 
 /* Сортировка гостиниц  */
+
 
 .shorting-list {
   display: flex;
@@ -288,6 +370,10 @@ font-family: "PT Sans", sans-serif;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
+}
+
+.shorting {
+  padding-top: 45px;
 }
 
 .shorting  h2 {
@@ -302,7 +388,18 @@ font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
 }
 
+.catalog-filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 83px;
+  margin-left: 72px;
+  margin-right: auto;
+}
 
+.catalog-filter-group {
+  margin-right: 60px;
+}
 
 .catalog-filter-group-card {
   color: black;
@@ -326,12 +423,15 @@ font-family: "PT Sans", sans-serif;
   padding: 0;
   width: 1200px;
   text-align: left;
+  list-style-type: none;
 }
 .rating-card-button {
   color: black;
   background-color:#F2F2F2;
   text-align: right;
 }
+
+
 
 .pagination-show-more {
   display: flex;
@@ -351,23 +451,33 @@ font-family: "PT Sans", sans-serif;
   text-decoration: none;
 }
 
-.pagination-item {
-  margin: 0;
-  padding: 0;
-  width: 1200px;
-  display: inline-block;
-  width: 55px;
-  height: 55px;
-  color: white;
-  background-color: #83B3D3;
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .pagination-current {
-  margin: 0;
-  width: 55px;
-  height: 55px;
   color: black;
   background-color: #E5E5E5;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 55px;
+  height: 55px;
+  padding: 14px 20px;
+  line-height: 26px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #83B3D3;
 }
 
 .sorting-list {
@@ -376,39 +486,47 @@ font-family: "PT Sans", sans-serif;
 }
 .page-pagination-container {
   margin-right: 72px;
+  padding: 8px;
   display: flex;
   width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
   border-radius: 4px;
+  list-style-type: none;
 
 }
 
-
 /* Поиск гостиниц */
-
 
 .search-hotel {
   font-size: 22px;
   line-height: 26px;
-  width: auto;
+  width: 720px;
   text-align: center;
-  height: 411px;
+  height: 235px;
   color: black;
-  background-color:white
+  background-color:white;
+  margin: 91px auto 91px 240px;
 }
 
 .page-main-search-hotel {
   font-size: 30px;
   line-height: 36px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .search-hotel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 575px;
   height: 60px;
   font-size: 20px;
   line-height: 36px;
+  margin: auto;
+  margin-top: 70px;
+  border-radius: 10px;
 }
 
 
@@ -419,12 +537,13 @@ font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   width: auto;
-  height: 411px;
+  min-height: 411px;
   text-align: center;
   color: white;
   background-image: url("../image/background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  margin-top: 9px;
 }
 
 .newsletter-catalog {
@@ -438,21 +557,44 @@ font-family: "PT Sans", sans-serif;
 }
 
 .page-main-newsletter {
+  padding-top: 85px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter-email {
+  padding: 0;
+  margin: 0;
+}
+
+input[type=email]{
+  width:600px;
+  height: 55px;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
 .newsletter-button {
+  width: 200px;
+  height: 60px;
   font-size: 20px;
   line-height: 26px;
   color: white;
   background-color: #83B3D3;
   text-transform: uppercase;
+  padding: 0 10px;
+  margin: 10px 0;
 }
 
 /* Подвал */
-
 
 
 .page-footer {
@@ -462,7 +604,8 @@ font-family: "PT Sans", sans-serif;
   margin-left: auto;
   margin-right: auto;
   color: black;
-  background-color: #FFFFFF;
+  padding: 40px 0;
+  background-color: white;
   justify-content: center;
 }
 
@@ -473,6 +616,21 @@ font-family: "PT Sans", sans-serif;
 .footer-social {
   width: 180px;
   margin-right: 60px;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-bottom: 8px;
 }
 
 .footer-author {
