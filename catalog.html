@@ -13,7 +13,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="main.html" >Главная</a>
+              <a class="navigation-link navigation-link-current" href="index.html" >Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about-sedona.html">О Седоне</a>
@@ -129,19 +129,20 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <input class="range-toggle toggle-min" type="range">
-            <span class="visually-hidden">Изменить минимальную цену.</span>
-            <input class="range-toggle toggle-max" type="range">
-            <span class="visually-hidden">Изменить максимальную цену.</span>
+            <div class="catalog-filter-range group-range">
+              <input class="range-toggle" type="range" min="0" max="12000" step="100" value="0" aria-hidden="true">
+              <span class="visually-hidden">Изменить минимальную цену.</span>
+              <input class="range-toggle" type="range" type="range" min="0" max="12000" step="100" value="9000" aria-hidden="true">
+              <span class="visually-hidden">Изменить максимальную цену.</span>
 
-            <label class="catalog-filter-label">
-                <input class="catalog-filter-input" type="number" name="min-price"> от
-            </label>
+              <label class="catalog-filter-label">
+                  <input class="catalog-filter-input" type="number" name="min-price"> от
+              </label>
 
-            <label class="catalog-filter-label">
-                <input class="catalog-filter-input" type="number" name="max-price"> до
-            </label>
-
+              <label class="catalog-filter-label">
+                  <input class="catalog-filter-input" type="number" name="max-price"> до
+              </label>
+            </div>
           </fieldset>
           <div class="but-pr">
             <button class="button button-apply" type="submit">Применить</button>
@@ -191,46 +192,62 @@
         <li class="house-card">
           <a class="house-card-link" href="house.html">
             <img class="house-card-image" src="image/catalog/hotel-1.jpg" width="180" height="120" alt="Гостиница Amara Resort & Spa">
+          </a>
+          <a class="house-card-title-link" href="">
             <h3 class="house-card-title">Amara Resort & Spa</h3>
           </a>
-          <img class="stars-card-image" src="image/star-4.svg" width="91" height="17" alt="4">
           <p class="house-card-price">Гостиница от 4000 ₽</p>
           <a href="#" class="details-card-button button">Подробнее</a>
           <a href="#" class="favourites-card-button button">Избранное</a>
-          <a href="#" class="rating-card-button button">Рейтинг: 8,5</a>
+          <a href="#" class="rating-card-button button">
+            <!--<img class="stars-card-image" src="image/star-4.svg" width="91" height="17" alt="4">-->
+            Рейтинг: 8,5
+          </a>
         </li>
         <li class="house-card">
           <a class="house-card-link" href="house.html">
               <img class="house-card-image" src="image/catalog/hotel-2.jpg" width="180" height="120" alt="Мотель Desert Quail Inn">
-              <h3 class="house-card-title">Desert Quail Inn</h3>
-            </a>
-            <img class="stars-card-image" src="image/star-3.svg" width="68" height="17" alt="3">
+          </a>
+          <a class="house-card-title-link" href="">
+            <h3 class="house-card-title">Desert Quail Inn</h3>
+          </a>
             <p class="house-card-price">Мотель от 3000 ₽</p>
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button button">Избранное</a>
-            <a href="#" class="rating-card-button button">Рейтинг: 8,9</a>
+            <a href="#" class="rating-card-button button">
+              <!--<img class="stars-card-image" src="image/star-3.svg" width="68" height="17" alt="3">-->
+              Рейтинг: 8,9
+            </a>
         </li>
         <li class="house-card">
             <a class="house-card-link" href="house.html">
               <img class="house-card-image" src="image/catalog/hotel-3.jpg" width="180" height="120" alt="Апартаменты Villas at Poco Diablo">
+            </a>
+            <a class="house-card-title-link" href="">
               <h3 class="house-card-title">Villas at Poco Diablo</h3>
             </a>
-            <img class="stars-card-image" src="image/star-2.svg" width="43" height="17" alt="2">
             <p class="house-card-price">Апартаменты от 2000 ₽</p>
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button-green button">Избранное</a>
-            <a href="#" class="rating-card-button button">Рейтинг: 9,2</a>
+            <a href="#" class="rating-card-button button">
+              <!--<img class="stars-card-image" src="image/star-2.svg" width="43" height="17" alt="2">-->
+              Рейтинг: 9,2
+            </a>
         </li>
         <li class="house-card">
             <a class="house-card-link" href="house.html">
               <img class="house-card-image" src="image/catalog/hotel-4.jpg" width="180" height="120" alt="Гостиница GreenTree Inn">
+            </a>
+            <a class="house-card-title-link" href="">
               <h3 class="house-card-title">GreenTree Inn</h3>
             </a>
-            <img class="stars-card-image" src="image/star-2.svg" width="43" height="17" alt="2">
             <p class="house-card-price">Гостиница от 3000 ₽</p>
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button button">Избранное</a>
-            <a href="#" class="rating-card-button button">Рейтинг: 9,2</a>
+            <a href="#" class="rating-card-button button">
+              <!--<img class="stars-card-image" src="image/star-2.svg" width="43" height="17" alt="2">-->
+              Рейтинг: 9,2
+            </a>
         </li>
       </ul>
 
@@ -291,11 +308,10 @@
           </button>
         </form>
       </section>
-    </div>
     </main>
 
     <!-- Подвал сайта -->
-    <footer class="page-footer">
+      <footer class="page-footer">
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
@@ -330,5 +346,5 @@
         </section>
     </footer>
   </div>
-</body>
+  </body>
 </html>

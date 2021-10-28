@@ -44,6 +44,10 @@ body {
 }
 
 .button {
+
+  padding: 9px 34px;
+  border-radius: 4px;
+
   font-family: inherit;
   font-size: 16px;
   line-height: 16px;
@@ -86,41 +90,37 @@ body {
 
 .page-header {
   display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: space-around;
   color: #000000;
   background: #FFFFFF;
 }
 
 .navigation {
-  width: 1200px;
+
   display: flex;
+  flex: 1 0 60%;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 120px;
-  padding: 0px;
+  padding-right: 71px;
   list-style-type: none;
 
 }
 
 .navigation-user {
   display: flex;
+  padding-left: 150px;
+  padding-right: 72px;
   list-style-type: none;
-  margin-left: 270px;
 }
 
 .navigation-logo {
   display: block;
   justify-content: center;
   margin-bottom: -10px;
-  position: absolute;
-  margin-left: 531px;
-  margin-right: auto
 }
 
 .navigation-user .navigation-link {
@@ -142,8 +142,6 @@ body {
 
 .icon {
   display: block;
-  margin: 0 auto;
-  width: 1200px;
   min-height: 400px;
   padding-top: 52px;
   padding-bottom: 83px;
@@ -169,7 +167,6 @@ body {
 .advantages-item {
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -181,7 +178,6 @@ body {
 .advantages-description-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   padding: 0;
   list-style-type: none;
 }
@@ -195,7 +191,6 @@ body {
 .advantages-description-item {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   list-style-type: none;
 }
 
@@ -203,7 +198,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  padding: 98px 75px 73px;
   min-height: 384px;
   color: white;
   background-color: #83B3D3;
@@ -212,53 +207,47 @@ body {
 
 .page-advantages-description {
   display: flex;
-  width: 400px;
+
   padding: 0px;
   text-align: center;
 }
 
-.advantages-description-item-1-1 {
+
+.advantages-description-item-2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  width: 400px;
-  min-height: 384px;
-  color: white;
-  background-color: #83B3D3;
-  text-align: center;
-}
-
-.advantages-description-item-2 {
-  width: 400px;
+  padding: 89px 75px 79px;
   min-height: 384px;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-description-item-3 {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 89px 75px 79px;
   min-height: 384px;
   color: #000000;
   background-color: #FFFFFF;
 }
 
 .advantages-description-item-4 {
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 89px 75px 79px;
   min-height: 384px;
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 
-.icon-image {
-  margin: auto;
-}
-
 .advantages-description-description {
-  margin:  0 auto;
   min-height: 73px;
   width: 250px;
 
@@ -267,12 +256,10 @@ body {
 
 
 .catalog-background-1 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+  width: 100%;
+  padding-top: 40px;
+  padding-right: 72px;
+  padding-left: 72px;
   min-height: auto;
   color: white;
   text-align: left;
@@ -280,14 +267,11 @@ body {
   background-size: cover;
 	background-position: center;
   background-repeat: no-repeat;
-  justify-content: space-between;
 }
 
 .order {
   display: flex;
-  margin: 71px;
-  margin-top: 0px;
-  padding: 0;
+  padding-bottom: 45px;
   list-style: none;
 }
 
@@ -308,14 +292,10 @@ body {
 }
 
 .inner-header-title {
-  display: flex;
-  flex-grow: 1;
   font-size: 60px;
   line-height: 100%;
-  margin-top: 35px;
-  margin-left: 71px;
-  margin-right: 580px;
   margin-bottom: 5px;
+  margin-top: 0;
 }
 
 .button-apply {
@@ -352,7 +332,6 @@ body {
 .catalog-products {
   display: flex;
   flex-direction: column;
-  max-width: 150px;
   flex-wrap: wrap;
   justify-content: flex-start;
   list-style-type: none;
@@ -365,21 +344,18 @@ body {
 
 .shorting-list {
   display: flex;
-  width: 1200px;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
+  padding-left: 71px;
+
 }
 
 .shorting {
-  padding-top: 45px;
+  padding: 45px 0px;
 }
 
 .shorting  h2 {
   margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-style: Bold;
   font-size: 30px;
   line-height: 39px;
   text-align: left;
@@ -391,15 +367,21 @@ body {
 .catalog-filter {
   display: flex;
   justify-content: center;
-  margin-top: 45px;
   margin-bottom: 83px;
-  margin-left: 72px;
-  margin-right: auto;
+
 }
 
 .catalog-filter-group {
   margin-right: 60px;
 }
+
+/*-Слайдер-начало--
+
+
+
+--Слайдер-конец--*/
+
+/*-- Список гостиниц-начало--*/
 
 .catalog-filter-group-card {
   color: black;
@@ -410,27 +392,86 @@ body {
 .favourites-card-button {
   color: white;
   background-color: #83B3D3;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  width: 160px;
+  height: 37px;
+  text-align: center;
+  padding: 9px 0px;
+  border-radius: 4px;
 }
 
 .favourites-card-button-green {
   color: white;
-  background-color:#7DB54F
+  background-color:#7DB54F;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  width: 160px;
+  height: 37px;
+  text-align: center;
+  padding: 9px 0px;
+  border-radius: 4px;
 }
 
 .house-list {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  width: 1200px;
+  padding: 0px 71px;
+  width: 100%;
   text-align: left;
   list-style-type: none;
 }
+
+.house-card {
+  display: grid;
+    grid-template-columns: 180px 160px 160px 366px 160px;
+    grid-template-rows: 31px 31px 35px 37px 31px;
+    gap: 8px;
+}
+
+.house-card-link {
+  display: flex;
+  grid-column: 1/2;
+  grid-row: 2/4;
+}
+
+.house-card-title-link {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+
+
 .rating-card-button {
   color: black;
   background-color:#F2F2F2;
-  text-align: right;
+  width: 160px;
+  height: 37px;
+  padding: 9px 0px;
+  border-radius: 4px;
+  text-align: center;
+  grid-column: 5/6;
+  grid-row: 4/5;
 }
 
+.details-card-button {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  width: 151px;
+  height: 37px;
+  padding: 9px 0px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.house-card-price {
+  grid-column: 2/5;
+  grid-row: 3/4;
+}
+
+
+/*-- Список гостиниц-начало--*/
 
 
 .pagination-show-more {
@@ -451,20 +492,20 @@ body {
   text-decoration: none;
 }
 
-
 .pagination-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.pagination-current {
-  color: black;
-  background-color: #E5E5E5;
 }
 
 .pagination {
   display: flex;
   margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+.pagination-link.pagination-current {
+  color: black;
+  background-color: #F2F2F2;
+
 }
 
 .pagination-link {
@@ -478,22 +519,27 @@ body {
   font-weight: 700;
   color: #FFFFFF;
   background-color: #83B3D3;
+  border-radius: 4px;
 }
 
 .sorting-list {
   font-size: 18px;
-  line-height: 23px;
+  line-height: 24px;
+  padding-right: 72px;
 }
 .page-pagination-container {
-  margin-right: 72px;
-  padding: 8px;
-  display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  justify-content: space-between;
-  border-radius: 4px;
-  list-style-type: none;
 
+  padding: 31px 72px 0px 71px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.select-control {
+  font-size: 18px;
+  min-width: 160px;
+  height: 48px;
 }
 
 /* Поиск гостиниц */
@@ -536,7 +582,7 @@ body {
 .newsletter {
   font-size: 22px;
   line-height: 26px;
-  width: auto;
+  width: 100%;
   min-height: 411px;
   text-align: center;
   color: white;
@@ -549,7 +595,7 @@ body {
 .newsletter-catalog {
   font-size: 22px;
   line-height: 26px;
-  width: auto;
+  width: 100%;
   text-align: center;
   height: 411px;
   color: black;
@@ -598,44 +644,36 @@ input[type=email]{
 
 
 .page-footer {
-  width: 1200px;
   display: flex;
-  font-weight: 120px;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: space-around;
   color: black;
   padding: 40px 0;
   background-color: white;
-  justify-content: center;
 }
 
 .page-footer a {
   color: black;
 }
 
-.footer-social {
-  width: 180px;
-  margin-right: 60px;
-}
-
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  justify-content: space-around;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   list-style-type: none;
+}
+
+.footer-social {
+  width: 110px;
 }
 
 .footer-social-item {
   width: 20px;
   height: 20px;
-  margin-right: 10px;
-  margin-bottom: 8px;
-}
-
-.footer-author {
-  margin-left: 60px;
-  max-width: 120px;
+  padding-right: 10px;
+  padding-bottom: 8px;
 }
 
 .phone {
