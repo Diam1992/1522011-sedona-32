@@ -13,13 +13,13 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html" >Главная</a>
+              <a class="navigation-link" href="index.html" >Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="about-sedona.html">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <a class="navigation-logo" href="#">
@@ -28,6 +28,9 @@
           <ul class="navigation-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="m18 16.5-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8S0 3.6 0 8c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5ZM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"/>
+                </svg>
                 <span class="visually-hidden">
                   Поиск
                 </span>
@@ -35,6 +38,9 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17"  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
+                  </svg>
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
@@ -170,18 +176,18 @@
         </div>
         <div class="shorting-list-2">
           <form class="catalog-filter-group-card">
-          <label class="control-list">
-            <input class="visually-hidden button-card" type="radio" name="button-radio" value="card">
+          <a href="#" class="button-card" type="button">
+            <svg width="16" height="14"   viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></svg>
             <span class="visually-hidden">Показать карточки</span>
-          </label>
-          <label class="control-list">
-            <input class="visually-hidden buton-monitor" type="radio" name="button-radio" value="monitor">
+          </a>
+          <a href="#" class="button-card" type="button">
+            <svg width="16" height="14"   viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></svg>
             <span class="visually-hidden">Полный экран</span>
-          </label>
-          <label class="control-list">
-            <input class="visually-hidden button-light" type="radio" name="button-radio" value="light" checked>
+          </a>
+          <a href="#" class="button-card" type="button">
+            <svg  width="16" height="14" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></svg>
             <span class="visually-hidden">Показать список</span>
-          </label>
+          </a>
           </form>
         </div>
       </section>
@@ -196,7 +202,8 @@
           <a class="house-card-title-link" href="">
             <h3 class="house-card-title">Amara Resort & Spa</h3>
           </a>
-          <p class="house-card-price">Гостиница от 4000 ₽</p>
+          <p class="house-card-house">Гостиница</p>
+          <p class="house-card-price">от 4000 ₽</p>
           <a href="#" class="details-card-button button">Подробнее</a>
           <a href="#" class="favourites-card-button button">Избранное</a>
           <a href="#" class="rating-card-button button">
@@ -211,7 +218,8 @@
           <a class="house-card-title-link" href="">
             <h3 class="house-card-title">Desert Quail Inn</h3>
           </a>
-            <p class="house-card-price">Мотель от 3000 ₽</p>
+            <p class="house-card-house">Мотель</p>
+            <p class="house-card-price">от 3000 ₽</p>
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button button">Избранное</a>
             <a href="#" class="rating-card-button button">
@@ -226,7 +234,8 @@
             <a class="house-card-title-link" href="">
               <h3 class="house-card-title">Villas at Poco Diablo</h3>
             </a>
-            <p class="house-card-price">Апартаменты от 2000 ₽</p>
+            <p class="house-card-house">Апартаменты</p>
+            <p class="house-card-price">от 2000 ₽</p>
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button-green button">Избранное</a>
             <a href="#" class="rating-card-button button">
@@ -241,7 +250,8 @@
             <a class="house-card-title-link" href="">
               <h3 class="house-card-title">GreenTree Inn</h3>
             </a>
-            <p class="house-card-price">Гостиница от 3000 ₽</p>
+            <p class="house-card-house">Гостиница</p>
+            <p class="house-card-price">от 3000 ₽</p>
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button button">Избранное</a>
             <a href="#" class="rating-card-button button">
@@ -253,8 +263,9 @@
 
 
         <!-- Пангинация страниц гостиниц -->
+      <div class="loading">
         <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-
+      </div>
       <div class="page-pagination-container">
         <ul class="pagination">
           <li class="pagination-item">
@@ -270,9 +281,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">...</span>
-            </a>
+            <a class="pagination-link" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -316,17 +325,17 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button button-soc" href="https://twitter.com/htmlacademy_ru">
+              <a class="button button-soc twit-mail" href="https://twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button button-soc" href="https://www.facebook.com/htmlacademy">
+              <a class="button button-soc face-mail" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button button-soc" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <a class="button button-soc youtube-mail" href="https://www.youtube.com/c/HTMLAcademyRUS">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
