@@ -45,6 +45,49 @@
                 </svg>
                 <span class="heart">12</span>
                 <span class="visually-hidden">Избранное</span>
+                <div class="popover popover-cart">
+                  <ul class="cart-items-list">
+                    <li class="cart-item">
+
+                        <div class="house-card-image-page">
+                          <img class="house-card-image-2" src="image/catalog/hotel-2.jpg" width="48" height="48" alt="Мотель Desert Quail Inn">
+                        </div>
+                          <p class="house-card-title-2">Desert Quail Inn</p>
+                          <p class="house-card-house-3">Мотель</p>
+
+                      <button class="cart-item-button" type="button">
+                        <svg class="delete-icon" width="16" height="16"  xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 2.3H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2 1.2H9.6C9.9 1.2 10.2 0.9 10.2 0.6C10.2 0.3 10 0 9.7 0H6.2C5.9 0 5.7 0.3 5.7 0.6C5.7 0.9 5.9 1.2 6.2 1.2Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2 12C6.5 12 6.8 11.7 6.8 11.4V5.7C6.8 5.4 6.5 5.1 6.2 5.1C5.9 5.1 5.6 5.4 5.6 5.7V11.4C5.7 11.7 5.9 12 6.2 12Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7 12C10 12 10.3 11.7 10.3 11.4V5.7C10.3 5.4 10 5.1 9.7 5.1C9.4 5.1 9.1 5.5 9.1 5.7V11.4C9.1 11.7 9.3 12 9.7 12Z"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                    <li class="cart-item">
+
+                        <div class="house-card-image-page">
+                          <img class="house-card-image-2" src="image/catalog/hotel-3.jpg" width="48" height="48" alt="Апартаменты Villas at Poco Diablo">
+                        </div>
+                        <p class="house-card-title-2">Villas at Poco Diablo</p>
+                        <p class="house-card-house-3">Апартаменты</p>
+
+                      <button type="button" class="cart-item-button">
+                        <svg class="delete-icon" width="16" height="16"  xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3 2.3H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2 1.2H9.6C9.9 1.2 10.2 0.9 10.2 0.6C10.2 0.3 10 0 9.7 0H6.2C5.9 0 5.7 0.3 5.7 0.6C5.7 0.9 5.9 1.2 6.2 1.2Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.2 12C6.5 12 6.8 11.7 6.8 11.4V5.7C6.8 5.4 6.5 5.1 6.2 5.1C5.9 5.1 5.6 5.4 5.6 5.7V11.4C5.7 11.7 5.9 12 6.2 12Z"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M9.7 12C10 12 10.3 11.7 10.3 11.4V5.7C10.3 5.4 10 5.1 9.7 5.1C9.4 5.1 9.1 5.5 9.1 5.7V11.4C9.1 11.7 9.3 12 9.7 12Z"/>
+                        </svg>
+                        <span class="visually-hidden">Удалить из корзины</span>
+                      </button>
+                    </li>
+                  </ul>
+                  <button class="popover-memory-button">
+                    Все избранные
+                  </button>
+                </div>
               </a>
             </li>
             <li class="navigation-item">
@@ -72,11 +115,6 @@
                 <path d="M4 10.0001H5V7.50005H7V10.0001H8V6.50005H4V10.0001Z" fill="white"/>
               </svg>
               <span class="visually-hidden">Главная</span>
-            </a>
-          </li>
-          <li class="order-item">
-            <a class="order-link go" href="catalog.html">
-              <span class="visually-hidden">Вперед</span>
             </a>
           </li>
           <li class="order-item">
@@ -142,26 +180,18 @@
           </fieldset>
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <div class="catalog-filter-range">
-              <div class="group-range">
-                <div class="range-bar" style="left: 42px; width: 136px">
-                  <button class="range-toggle toggle-min">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-                  <button class="range-toggle toggle-max" >
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
-                </div>
-                <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">
-                      <input class="catalog-filter-input" type="number" value="0" name="min-price"> от
-                  </label>
-                  <label class="catalog-filter-label">
-                      <input class="catalog-filter-input" type="number"  value="9000" name="max-price"> до
-                  </label>
-                </div>
-              </div>
-            </div>
+              <p class="range-wrapper-inputs">
+                <label class="catalog-filter-label">
+                    <input class="catalog-filter-input" type="number" value="0" name="min-price" fill="white"> от
+                </label>
+                <label class="catalog-filter-label">
+                    <input class="catalog-filter-input" type="number"  value="9000" name="max-price" fill="white"> до
+                </label>
+              </p>
+              <p class="range-slider cost__range group-range" style="--first-val:0%; --second-val:85%;">
+                <input class="range-slider__input" type="range" min="0" max="12000" value="0" step="100" aria-label="Изменить минимальную цену."/>
+                <input class="range-slider__input" type="range" min="0" max="12000" value="9000" step="100" aria-label="Изменить максимальную цену."/>
+              </p>
           </fieldset>
           <div class="but-pr">
             <button class="button button-apply" type="submit">Применить</button>
@@ -220,8 +250,8 @@
           <p class="house-card-price">от 4000 ₽</p>
           <a href="#" class="details-card-button button">Подробнее</a>
           <a href="#" class="favourites-card-button button">Избранное</a>
-          <a href="#" class="rating-card-button button">
-            <!--<img class="stars-card-image" src="image/star-4.svg" width="91" height="17" alt="4">-->
+          <a href="#" class="rating-card-button">
+            <img class="stars-card-image" src="image/star-4.svg" width="91" height="17" alt="4">
             Рейтинг: 8,5
           </a>
         </li>
@@ -236,8 +266,8 @@
             <p class="house-card-price">от 3000 ₽</p>
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button button">Избранное</a>
-            <a href="#" class="rating-card-button button">
-              <!--<img class="stars-card-image" src="image/star-3.svg" width="68" height="17" alt="3">-->
+            <a href="#" class="rating-card-button">
+              <img class="stars-card-image" src="image/star-3.svg" width="68" height="17" alt="3">
               Рейтинг: 8,9
             </a>
         </li>
@@ -252,8 +282,8 @@
             <p class="house-card-price">от 2000 ₽</p>
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button-green button">Избранное</a>
-            <a href="#" class="rating-card-button button">
-              <!--<img class="stars-card-image" src="image/star-2.svg" width="43" height="17" alt="2">-->
+            <a href="#" class="rating-card-button">
+              <img class="stars-card-image" src="image/star-2.svg" width="43" height="17" alt="2">
               Рейтинг: 9,2
             </a>
         </li>
@@ -268,8 +298,8 @@
             <p class="house-card-price">от 3000 ₽</p>
             <a href="#" class="details-card-button button">Подробнее</a>
             <a href="#" class="favourites-card-button button">Избранное</a>
-            <a href="#" class="rating-card-button button">
-              <!--<img class="stars-card-image" src="image/star-2.svg" width="43" height="17" alt="2">-->
+            <a href="#" class="rating-card-button">
+              <img class="stars-card-image" src="image/star-2.svg" width="43" height="17" alt="2">
               Рейтинг: 9,2
             </a>
         </li>
@@ -321,7 +351,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="newsletter-email">
             <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+              <input class="field error"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           </p>
           <button class="button newsletter-button" type="submit">
             <span>Подписаться</span>
