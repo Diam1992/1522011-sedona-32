@@ -84,7 +84,7 @@ body {
   overflow: hidden;
 }
 
-a,button,input, textarea {
+button,input, textarea {
   outline: none;
 }
 
