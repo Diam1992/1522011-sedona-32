@@ -84,11 +84,6 @@ body {
   overflow: hidden;
 }
 
-button,input, textarea {
-  outline: none;
-}
-
-
 /* pages */
 
 .main-container {
@@ -1580,7 +1575,7 @@ input[type=email]:active {
 }
 
 .modal-container[hidden] {
-  display: flex;
+  display: none;
 }
 
 .modal-content {
