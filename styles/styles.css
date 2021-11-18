@@ -507,21 +507,20 @@ body {
   font-size: 16px;
   line-height: 21px;
   font-family: "PT Sans", sans-serif;
-  margin: 0 auto;
-  margin-bottom: 18px;
-  color: white;
-  background-color: #83B3D3;
+  margin-bottom: 12px;
+  color: #ffffff;
+  background-color: #83b3d3;
   text-transform: uppercase;
   border-radius: 4px;
   border: 0;
 }
 
 .button-apply:hover {
-  background-color: #68A2CA;
+  background-color: #8396ca;
 }
 
 .button-apply:focus {
-  box-shadow: inset 0 0 0 3px white;
+  box-shadow: inset 0 0 0 3px #ffffff;
   border-radius: 4px;
 }
 
@@ -536,7 +535,7 @@ body {
   line-height: 23px;
   font-weight: 400;
   padding: 5px 14px;
-  color: white;;
+  color: #ffffff;
   text-decoration: none;
   text-transform: none;
   background: transparent;
@@ -548,7 +547,7 @@ body {
 }
 
 .button-reset:focus {
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83b3d3;
   border-radius: 4px;
 }
 
@@ -583,12 +582,18 @@ body {
   width: 470px;
 }
 
+.shorting-list-1 {
+  margin-right: 17px;
+  margin-top: -4px;
+}
+
 .shorting-list-2 {
   padding: 5px 0;
 }
 
 .shorting {
-  padding: 42px 0;
+  padding-top: 49px;
+  padding-bottom: 42px;
 }
 
 .shorting  h2 {
@@ -597,8 +602,8 @@ body {
   font-size: 30px;
   line-height: 39px;
   text-align: left;
-  color: black;
-  background-color:white;
+  color: #000000;
+  background-color:#ffffff;
   text-transform: uppercase;
 }
 
@@ -648,7 +653,7 @@ body {
   left: 0;
   width: 16px;
   height: 16px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 4px;
 }
 
@@ -715,6 +720,7 @@ body {
   display: grid;
   grid-template-columns: 144px 144px;
   margin: 0;
+  margin-top: 6px;
   font-size: 18px;
   line-height: 1.28;
   text-transform: uppercase;
@@ -775,6 +781,7 @@ body {
 
 .group-range {
   margin: 0;
+  margin-top: -4px;
   width: 100%;
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3) var(--first-val), #fff var(--first-val), #fff var(--second-val), rgba(255, 255, 255, 0.3) var(--second-val));
   background-size: 100% 4px;
@@ -807,7 +814,7 @@ body {
 }
 
 .range-slider__input::-webkit-slider-thumb {
-  background-color: #fff;
+  background-color: #ffffff;
   border: none;
   border-radius: 5px;
   pointer-events: auto;
@@ -826,7 +833,7 @@ body {
 }
 
 .range-slider__input::-moz-range-thumb {
-  background-color: #fff;
+  background-color: #ffffff;
   border: none;
   border-radius: 5px;
   pointer-events: auto;
@@ -875,54 +882,56 @@ body {
   display: flex;
   justify-content: space-between;
   padding-right: 72px;
-  width: 240px;
-  color: black;
-  background-color:white;
+  width: 230px;
+  margin-top: -6px;
+  color: #000000;
+  background-color:#ffffff;
 }
 
 .button-card {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   transform: scale(1.2);
-  border: 2px solid #E5E5E5;
-  padding:  8px;
+  border: 2px solid #e5e5e5;
+  padding:  6px;
   border-radius: 4px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .button-card:last-child {
   border-radius: 4px;
-  border: 2px solid black;
+  border: 2px solid #000000;
 }
 
 .button-card:hover {
-box-shadow: inset 0 0 0 3px #83B3D3;
+box-shadow: inset 0 0 0 3px #83b3d3;
 border-radius: 4px;
 }
 
 .button-card:focus {
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83b3d3;
   border-radius: 4px;
   outline: none;
 }
 
 .favourites-card-button {
-  color: white;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
   grid-column: 3/4;
   grid-row: 4/5;
   width: 160px;
   min-height: 37px;
+  margin-left: -5px;
   text-align: center;
   padding: 9px 0;
   border-radius: 4px;
 }
 
 .favourites-card-button:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .favourites-card-button:focus {
@@ -935,11 +944,12 @@ border-radius: 4px;
 }
 
 .favourites-card-button-green {
-  color: white;
-  background-color:#7DB54F;
+  color: #ffffff;
+  background-color:#7Db54f;
   grid-column: 3/4;
   grid-row: 4/5;
   width: 160px;
+  margin-left: -5px;
   height: 37px;
   text-align: center;
   padding: 9px 0;
@@ -947,7 +957,7 @@ border-radius: 4px;
 }
 
 .favourites-card-button-green:hover {
-  background-color: #6C9E42;
+  background-color: #6c9e42;
 }
 
 .favourites-card-button-green:focus {
@@ -970,9 +980,9 @@ border-radius: 4px;
 .house-card {
   display: grid;
     grid-template-columns: 180px 185px 160px 341px 160px;
-    grid-template-rows: 31px 31px 35px 37px 31px;
+    grid-template-rows: 20px 23px 44px 37px 24px;
     gap: 8px;
-    border-top: 1px solid #E5E5E5;
+    border-top: 1px solid #e5e5e5;
 }
 
 .house-card-link {
@@ -986,7 +996,7 @@ border-radius: 4px;
 }
 
 .house-card-link:focus img {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .house-card-link:active {
@@ -994,14 +1004,16 @@ border-radius: 4px;
 }
 
 .house-card-title {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 15px;
+  font-size: 24px;
+  line-height: 31px;
 }
 .house-card-title-link {
-  color: black;
+  color: #000000;
   padding: 10px 16px;
-  max-width: 250px;
+  max-width: 270px;
   align-self: center;
-  background-color: white;
+  background-color: #ffffff;
   text-decoration: none;
   grid-column: 2/4;
   grid-row: 2/3;
@@ -1012,7 +1024,7 @@ border-radius: 4px;
 }
 
 .house-card-title-link:focus  {
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83b3d3;
   border-radius: 10px;
 }
 
@@ -1022,15 +1034,14 @@ border-radius: 4px;
 
 .rating-card-button {
   position: relative;
-  color: black;
-  background-color:#F2F2F2;
+  color: #000000;
+  background-color:#f2f2f2;
   width: 160px;
   min-height: 37px;
   padding: 9px 0;
   border-radius: 4px;
   grid-column: 5/6;
   grid-row: 4/5;
-  font-family: inherit, sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -1044,7 +1055,7 @@ border-radius: 4px;
   position: absolute;
   width: 100px;
   z-index: 1;
-  top: -70px;
+  top: -80px;
   left: 30px;
   right: 0;
   bottom: 0;
@@ -1057,18 +1068,19 @@ border-radius: 4px;
   min-height: 37px;
   padding: 9px 0;
   border-radius: 4px;
-  margin-left: 36px;
+  margin-left: 30px;
   text-align: center;
 }
 
 .house-card-house {
-  margin: 0 0 0 36px;
+  margin: 0 0 0 32px;
   grid-column: 2/4;
   grid-row: 3/4;
 }
 
 .house-card-price {
   margin: 0;
+  margin-left: -5px;
   grid-column: 3/5;
   grid-row: 3/4;
 }
@@ -1082,8 +1094,8 @@ border-radius: 4px;
   min-height: 55px;
   padding: 31px 0;
   margin: auto;
-  border-top: 1px solid #E5E5E5;
-  border-bottom: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /*-- Кнопка "Загрузить еще" --*/
@@ -1093,9 +1105,11 @@ border-radius: 4px;
   width: 625px;
   min-height: 55px;
   align-items: center;
+  font-size: 20px;
+  line-height: 26px;
   margin: 0 auto;
-  color: white;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
   justify-content: center;
   border-radius: 4px;
   border: 0px;
@@ -1115,8 +1129,8 @@ border-radius: 4px;
 }
 
 .house-card-link{
-  color: black;
-  background-color: white;
+  color: #000000;
+  background-color: #ffffff;
   text-decoration: none;
 }
 
@@ -1132,7 +1146,7 @@ border-radius: 4px;
 }
 
 .pagination-link.pagination-current {
-  color: black;
+  color: #000000;
   background-color: #f2f2f2;
 
 }
@@ -1146,14 +1160,14 @@ border-radius: 4px;
   line-height: 26px;
   font-size: 20px;
   font-weight: 700;
-  color: #FFFFFF;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
   border-radius: 4px;
   text-decoration: none;
 }
 
 .pagination-link:hover {
-  background-color: #68A2CA;
+  background-color: #68a2ca;
 }
 
 .pagination-link:focus {
@@ -1171,12 +1185,14 @@ border-radius: 4px;
   margin: 5px 0;
 }
 
+
+
 .list {
   padding-right: 51px;
 }
 
 .page-pagination-container {
-  padding: 31px 72px 0 71px;
+  padding: 27px 72px 0 71px;
   display: flex;
   width: 100%;
   gap: 10px;
@@ -1194,17 +1210,17 @@ border-radius: 4px;
 
 .select-control {
   width: 287px;
-  height: 58px;
+  min-height: 46px;
   padding: 8px 14px;
   padding-right: 48px;
   border-radius: 4px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
-  background-color: #FFFFFF;
-  border: 2px solid #E5E5E5;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
   background-image: url("../image/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 16px center;
+  background-position: right 22px center;
   appearance: none;
 }
 
@@ -1216,7 +1232,7 @@ border-radius: 4px;
 }
 
 .select-control:active {
-  border-color: #E5E5E5;
+  border-color: #e5e5e5;
   border-radius: 4px;
   outline: none;
   opacity: 30%;
@@ -1246,7 +1262,7 @@ border-radius: 4px;
 }
 
 .select-control-page:active {
-  border-color: #E5E5E5;
+  border-color: #e5e5e5;
   border-radius: 4px;
   outline: none;
   opacity: 30%;
@@ -1260,8 +1276,8 @@ border-radius: 4px;
   width: 720px;
   text-align: center;
   min-height: 235px;
-  color: black;
-  background-color:white;
+  color: #000000;
+  background-color:#ffffff;
   margin: 91px auto 91px 240px;
 }
 
@@ -1289,7 +1305,7 @@ border-radius: 4px;
   background-color: #615048;
 }
 .search-hotel-button:focus {
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83b3d3;
   border-radius: 10px;
 }
 
@@ -1306,7 +1322,7 @@ border-radius: 4px;
   width: 100%;
   min-height: 411px;
   text-align: center;
-  color: white;
+  color: #ffffff;
   background-image: url("../image/background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1319,12 +1335,20 @@ border-radius: 4px;
   width: 100%;
   text-align: center;
   min-height: 411px;
-  color: black;
-  background-color: white;
+  margin-bottom: 36px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .page-main-newsletter {
   padding-top: 92px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.page-main-newsletter-catalog {
+  padding-top: 32px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -1353,11 +1377,11 @@ input[type=email] {
   line-height: 26px;
   padding: 0 10px;
   padding-left: 19px;
-  color: black;
+  color: #000000;
   font-family: "PT Sans", sans-serif;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   margin: 10px 0;
 }
 
@@ -1369,22 +1393,22 @@ input[type=email] {
 input[type=email]:hover {
   border: 0;
   outline: none;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 input[type=email]:focus {
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83b3d3;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
 
 input[type=email]:active {
-  box-shadow: inset 0 0 0 3px black;
-  background-color: white;
+  box-shadow: inset 0 0 0 3px #000000;
+  background-color: #ffffff;
 }
 
 .error:not(:placeholder-shown):invalid {
-  box-shadow: inset 0 0 0 3px #FF5757;
+  box-shadow: inset 0 0 0 3px #ff5757;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
 }
@@ -1399,7 +1423,7 @@ input[type=email]:active {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 0;
-  color: white;
+  color: #ffffff;
   background-color: rgba(131, 179, 211);
   text-transform: uppercase;
   padding: 0 10px;
@@ -1433,11 +1457,11 @@ input[type=email]:active {
   display: flex;
   justify-content: space-around;
   padding: 40px 40px;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .page-footer a {
-  color: black;
+  color: #000000;
 }
 
 .footer-author {
@@ -1482,7 +1506,7 @@ input[type=email]:active {
 
 .soc-mail:hover {
   opacity: 80%;
-  fill: currentColor;
+  fill: currentcolor;
 }
 
 .soc-mail:focus {
@@ -1518,12 +1542,12 @@ input[type=email]:active {
 .footer-contact-phone:focus {
   border-radius: 10px;
   padding: 15px;
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83b3d3;
 }
 
 .footer-contact-phone:active {
   opacity: 30%;
-  box-shadow: inset 0 0 0 0 #83B3D3;
+  box-shadow: inset 0 0 0 0 #83b3d3;
 }
 
 .htmlacademy-link:hover img {
@@ -1532,15 +1556,16 @@ input[type=email]:active {
 
 .htmlacademy-link:focus img {
   border-radius: 10px;
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83b3d3;
 }
 
 .htmlacademy-link:active img {
   opacity: 30%;
-  box-shadow: inset 0 0 0 0 #83B3D3;
+  box-shadow: inset 0 0 0 0 #83b3b3;
 }
 
 /*-- Поповер--*/
+
 .popover {
   position: absolute;
   top: 0;
@@ -1560,7 +1585,7 @@ input[type=email]:active {
   display: none;
 }
 
-.popover:before {
+.popover::before {
   position: absolute;
   z-index: 3;
   height: 24px;
@@ -1638,7 +1663,7 @@ input[type=email]:active {
 }
 
 .house-card-image-2 {
-  color: black;
+  color: #000000;
   transform: scale(1.5)
 }
 
@@ -1646,7 +1671,7 @@ input[type=email]:active {
   margin: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  color: black;
+  color: #000000;
   position: relative;
   top: -47px;
   left: 65px;
@@ -1660,7 +1685,7 @@ input[type=email]:active {
   left: 0;
   width: 16px;
   height: 16px;
-  background-color: white;
+  background-color: #ffffff;
   opacity: 20%;
   cursor: pointer;
   padding: 15px;
@@ -1717,7 +1742,7 @@ input[type=email]:active {
   line-height: 16px;
   font-weight: 700;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756257;
   text-decoration: none;
   text-transform: uppercase;
@@ -1744,6 +1769,7 @@ input[type=email]:active {
 }
 
 /*-- Модальное Окно --*/
+
 .modal-container {
   position: fixed;
   z-index: 2;
@@ -1769,7 +1795,7 @@ input[type=email]:active {
   left: 0;
   margin: auto;
   padding: 35px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 30px;
 }
 
@@ -1834,7 +1860,7 @@ label[for=appointment-date] {
 }
 
 label[for=appointment-kind] {
-  padding-left: 50px;
+  padding-left: 49px;
   font-size: 18px;
   font-weight: 700;
 }
@@ -1869,9 +1895,9 @@ input[id="appointment-date"]:focus {
 }
 
 input[id="appointment-date"]:active {
-  background-color:white;
-  color: black;
-  box-shadow: inset 0 0 0 3px black;
+  background-color:#ffffff;
+  color: #000000;
+  box-shadow: inset 0 0 0 3px #000000;
   border-radius: 4px;
   outline: none;
 }
@@ -1888,9 +1914,9 @@ input[id="appointment-date-v"]:focus {
 }
 
 input[id="appointment-date-v"]:active {
-  background-color:white;
-  color: black;
-  box-shadow: inset 0 0 0 3px black;
+  background-color:#ffffff;
+  color: #000000;
+  box-shadow: inset 0 0 0 3px #000000;
   border-radius: 4px;
   outline: none;
 }
@@ -1932,7 +1958,7 @@ input[id="appointment-date-v"]:active {
   box-sizing: border-box;
   border-radius: 10px;
   margin-left: 3px;
-  margin-top: 18px;
+  margin-top: 13px;
   width: 576px;
   height: 60px;
   font-size: 20px;
@@ -1956,53 +1982,127 @@ input[id="appointment-date-v"]:active {
 .minimum {
   position: relative;
   border: 0;
-  width: 13px;
-  left: 172px;
-  bottom: 40px;
-  background-image: url("../image/minus.svg");
-  text-decoration: none;
-  background-position: left 17px center;
-  color: #000000;
+  width: 22px;
+  height: 20px;
+  left: 76px;
+  bottom: 8px;
+}
+
+.minimum[type="button"]::before {
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  width: 12px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 1);
+  content: "";
+}
+
+.minimum:hover {
+  opacity: 30%;
+}
+
+.minimum:focus {
+  box-shadow: inset 0 0 0 3px rgba(104, 162, 202);
+  border-radius: 4px;
+  outline: none;
+}
+
+.minimum:active {
+  opacity: 20%;
 }
 
 .maximum {
   position: relative;
-  width: 13px;
-  height: 13px;
+  width: 22px;
+  height: 20px;
   border: 0;
-  left: 237px;
-  bottom: 40px;
+  left: 254px;
+  bottom: 43px;
   background-image: url("../image/plus.svg");
-  background-position: right 13px center;
+  background-repeat: no-repeat;
+  background-position: left 6px center;
   text-decoration: none;
 }
+
+.maximum:hover {
+  opacity: 30%;
+}
+
+.maximum:focus {
+  box-shadow: inset 0 0 0 3px rgba(104, 162, 202);
+  border-radius: 4px;
+  outline: none;
+}
+
+.maximum:active {
+  opacity: 20%;
+}
+
 
 .minimum2 {
   position: relative;
   border: 0;
-  width: 13px;
-  left: 165px;
-  bottom: 40px;
-  background-image: url("../image/minus.svg");
-  background-position:  17px center;
-  text-decoration: none;
-  color: #000000;
+  width: 22px;
+  height: 20px;
+  left: 38px;
+  bottom: 8px;
+}
+
+.minimum2[type="button"]::before {
+  position: absolute;
+  top: 9px;
+  left: 5px;
+  width: 12px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 1);
+  content: "";
+}
+
+.minimum2:hover {
+  opacity: 30%;
+}
+
+.minimum2:focus {
+  box-shadow: inset 0 0 0 3px rgba(104, 162, 202);
+  border-radius: 4px;
+  outline: none;
+}
+
+.minimum2:active {
+  opacity: 20%;
 }
 
 .maximum2 {
   position: relative;
-  width: 13px;
-  height: 13px;
+  width: 22px;
+  height: 20px;
   border: 0;
-  left: 230px;
-  bottom: 40px;
+  left: 249px;
+  bottom: 43px;
   background-image: url("../image/plus.svg");
-  background-position: right 13px center;
+  background-repeat: no-repeat;
+  background-position: left 6px center;
   text-decoration: none;
 }
 
+.maximum2:hover {
+  opacity: 30%;
+}
+
+.maximum2:focus {
+  box-shadow: inset 0 0 0 3px rgba(104, 162, 202);
+  border-radius: 4px;
+  outline: none;
+}
+
+.maximum2:active {
+  opacity: 20%;
+}
+
+
 .appointment-form-button:focus {
-  color: white;
+  color: #ffffff;
   background-color: rgba(104, 162, 202);
   box-shadow: inset 0 0 0 3px rgba(117, 98, 87);
   border-radius: 10px;
@@ -2026,8 +2126,7 @@ input[id="appointment-date-v"]:active {
 .info {
   position: relative;
   top: 2px;
-  margin-left: 5px;
-  margin-right: 20px;
+  margin-left: 8px;
   padding: 0;
   color: #ffffff;
   background-color: rgba(131, 179, 211);
@@ -2046,7 +2145,7 @@ input[id="appointment-date-v"]:active {
 }
 
 .appointment-form .field2 {
-  margin-left: 68px;
+  margin-left: 41px;
   text-align: center;
   width: 133px;
   border-radius: 4px;
@@ -2066,7 +2165,7 @@ input::-webkit-inner-spin-button {
 .information {
   position: absolute;
   z-index: 1;
-  color: white;
+  color: #ffffff;
   width: 255px;
   min-height: 143px;
   left: 354px;
@@ -2086,7 +2185,7 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
 }
 
-.information:before {
+.information::before {
   position: absolute;
   z-index: 3;
   height: 24px;
