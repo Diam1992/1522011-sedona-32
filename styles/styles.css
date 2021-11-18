@@ -184,7 +184,7 @@ body {
 }
 
 .navigation-link:focus {
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83b3d3;
   border-radius: 10px;
   outline: none;
 }
@@ -216,7 +216,7 @@ body {
   bottom: 0;
   right: 0;
   margin: auto 0;
-  fill: black;
+  fill: #000000;
 }
 
 .navigation-icon:nth-child(2) {
@@ -235,7 +235,7 @@ body {
   bottom: 37%;
   right: 0;
   margin: auto 0;
-  fill:white;
+  fill:#ffffff;
 }
 
 .navigation-link:hover .navigation-icon {
@@ -261,7 +261,7 @@ body {
   align-items: center;
   border-radius: 100%;
   background-color: rgba(125, 181, 79);
-  color: white;
+  color: #ffffff;
   font-size: 10px;
   line-height: 13px;
   font-family: inherit;
@@ -284,16 +284,16 @@ body {
   padding-bottom: 81px;
   color: #000000;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-image:  url("../image/index-background.png");
   background-size: cover;
 	background-position: center;
   background-repeat: no-repeat;
 }
 
-.icon:after  {
+.icon::after  {
     content: "";
-    background-color: #fff;
+    background-color: #ffffff;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -376,8 +376,8 @@ body {
   justify-content: center;
   padding: 80px 0 77px;
   min-height: 384px;
-  color: white;
-  background-color: #83B3D3;
+  color: #ffffff;
+  background-color: #83b3d3;
   text-align: center;
 }
 
@@ -410,7 +410,7 @@ body {
   align-items: center;
   min-height: 384px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .advantages-description-item-4 {
@@ -437,7 +437,7 @@ body {
   padding-right: 72px;
   padding-left: 72px;
   min-height: auto;
-  color: white;
+  color: #ffffff;
   text-align: left;
   background-image: url("../image/catalog/catalog-background-1.png");
   background-size: cover;
@@ -481,7 +481,7 @@ body {
 }
 
 .order-link:focus {
-  box-shadow: inset 0 0 0 3px #83B3D3;
+  box-shadow: inset 0 0 0 3px #83b3d3;
   border-radius: 4px;
 }
 
@@ -516,7 +516,7 @@ body {
 }
 
 .button-apply:hover {
-  background-color: #8396ca;
+  background-color: #83a6ca;
 }
 
 .button-apply:focus {
@@ -723,7 +723,6 @@ body {
   margin-top: 6px;
   font-size: 18px;
   line-height: 1.28;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.3);
   position: relative;
 }
@@ -783,7 +782,7 @@ body {
   margin: 0;
   margin-top: -4px;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3) var(--first-val), #fff var(--first-val), #fff var(--second-val), rgba(255, 255, 255, 0.3) var(--second-val));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3) var(--first-val), #ffffff var(--first-val), #ffffff var(--second-val), rgba(255, 255, 255, 0.3) var(--second-val));
   background-size: 100% 4px;
   background-repeat: no-repeat;
   background-position: center;
