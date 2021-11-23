@@ -26,7 +26,7 @@
             <img class="header-sedona-logo" width="138" height="70" alt="Логотип города Седона" src="image/sedona.svg">
           </a>
           <ul class="navigation-user">
-            <li class="navigation-item">
+            <li class="navigation-item" style="left: -2px;">
               <a class="navigation-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="m18 16.5-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8S0 3.6 0 8c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5ZM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"/>
@@ -34,7 +34,7 @@
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
+            <li class="navigation-item" style="left: -13px;">
               <a class="navigation-link" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17"  xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
@@ -98,16 +98,22 @@
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <ul class="order">
           <li class="order-item">
-            <a class="order-link main-page" href="index.html">
+            <a class="order-link" href="index.html">
               <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M6 0L0 5.80006V12.0001H12V5.80006L6 0ZM11 11.0001H1V6.20005L6 1.4L11 6.20005V11.0001Z" fill="white"/>
                 <path d="M4 10.0001H5V7.50005H7V10.0001H8V6.50005H4V10.0001Z" fill="white"/>
               </svg>
-              <span class="visually-hidden">Главная</span>
             </a>
           </li>
           <li class="order-item">
-            <a class="order-link">Гостиницы</a>
+            <a class="main-page" href="#">
+              <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.8 3.60005L0.999999 0.200049C0.799999 4.88311e-05 0.399999 4.88311e-05 0.0999989 0.200049C-0.200001 0.400049 -0.100001 0.800049 0.0999989 1.00005L3.4 4.00005L0.199999 7.00005C-1.11759e-06 7.20005 -1.11759e-06 7.60005 0.199999 7.80005C0.199999 7.90005 0.499999 8.00005 0.599999 8.00005C0.699999 8.00005 0.899999 7.90005 0.999999 7.80005L4.8 4.40005C5.1 4.20005 5.1 3.80005 4.8 3.60005Z" fill="white"/>
+              </svg>
+            </a>
+          </li>
+          <li class="order-item">
+            <a class="order-link" href="#">Гостиницы</a>
           </li>
         </ul>
       </header>
@@ -122,7 +128,7 @@
                   <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
                   <span class="control-mark"></span>
                   <span class="control-label">Бассейн</span>
-                  </label>
+                </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
