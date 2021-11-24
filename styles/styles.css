@@ -1337,8 +1337,7 @@ body {
 }
 
 .search-hotel-button:active {
-  color: rgba(117, 98, 87, 0.7);
-  background-color: #615048;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Подписка */
@@ -1411,6 +1410,7 @@ input[type="email"] {
   border-top-left-radius: 10px;
   background-color: #f2f2f2;
   margin: 10px 0;
+  outline: none;
 }
 
 .field {
