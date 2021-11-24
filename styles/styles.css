@@ -14,7 +14,6 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
-
 *,
 *::before,
 *::after {
@@ -25,7 +24,6 @@ img {
   max-width: 100%;
   object-fit: contain;
 }
-
 
 html {
   height: 100%;
@@ -191,10 +189,6 @@ body {
   outline: none;
 }
 
-.navigation-link:active {
-  opacity: 30%;
-}
-
 .navigation-link-current::before {
   position: absolute;
   z-index: 1;
@@ -250,6 +244,10 @@ body {
 
 .navigation-link:focus .navigation-icon {
   color: rgba(117, 98, 87, 0.7);
+}
+
+.navigation-link:active .navigation-icon {
+  opacity: 30%;
 }
 
 .header-sedona-logo {
@@ -1007,7 +1005,6 @@ body {
   display: flex;
   grid-column: 1/2;
   grid-row: 2/4;
-
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
@@ -1040,6 +1037,7 @@ body {
   text-decoration: none;
   grid-column: 2/4;
   grid-row: 2/3;
+  outline: none;
 }
 
 .house-card-title-link:hover {
@@ -1164,40 +1162,21 @@ body {
   list-style-type: none;
 }
 
-.pagination-current {
-display: block;
-box-sizing: border-box;
-width: 55px;
-height: 55px;
-padding: 14px 20px;
-line-height: 26px;
-font-size: 20px;
-font-weight: 700;
-color: #000000;
-background-color: #f2f2f2;
-border-radius: 4px;
-text-decoration: none;
-}
-
-/*.pagination-link.pagination-current {
+.pagination-link.pagination-current {
   color: #000000;
   background-color: #f2f2f2;
-}*/
+}
 
-.pagination-current:hover {
+.pagination-link.pagination-current:hover {
   color: #000000;
   background-color: rgba(229, 229, 229, 1);
 }
 
-.pagination-current:focus {
-  box-shadow: inset 0 0 0 3px rgba(131, 179, 211, 1);
+.pagination-link.pagination-current:focus {
+  box-shadow: inset 0 0 0 0 #756257;
   border-radius: 4px;
+  outline: none;
 }
-
-.pagination-current:active {
-  color: rgba(0, 0, 0, 0.7);
-}
-
 
 .pagination-link {
   display: block;
@@ -1233,7 +1212,6 @@ text-decoration: none;
   line-height: 24px;
   margin: 2px 0 5px 0;
 }
-
 
 .list {
   padding-right: 47px;
